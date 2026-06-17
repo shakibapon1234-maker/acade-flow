@@ -101,22 +101,31 @@
       to { opacity: 1; transform: translateY(0); }
     }
     .splash-logo-ring {
-      position: relative; width: 220px; height: 220px;
+      position: relative; width: 280px; height: 280px;
       display: flex; align-items: center; justify-content: center;
     }
     .splash-ring-glow {
-      position: absolute; inset: -8px; border-radius: 50%;
+      position: absolute; inset: -6px; border-radius: 50%;
       border: 3px solid transparent; border-top-color: var(--teal);
       animation: ringRotate 2s linear infinite;
-      box-shadow: 0 0 40px rgba(0,212,200,0.4);
+      box-shadow: 0 0 40px rgba(0,212,200,0.5);
     }
     .splash-ring-glow2 {
-      position: absolute; inset: -18px; border-radius: 50%;
+      position: absolute; inset: -16px; border-radius: 50%;
       border: 2px solid transparent; border-bottom-color: var(--purple);
       animation: ringRotate 3s linear infinite reverse;
     }
     @keyframes ringRotate { to { transform: rotate(360deg); } }
-    .splash-logo { width: 160px; animation: logoPulse 2s ease-in-out infinite; }
+    .splash-logo {
+      width: 200px;
+      height: auto;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: logoPulse 2s ease-in-out infinite;
+    }
     @keyframes logoPulse {
       0%, 100% { transform: scale(1); filter: drop-shadow(0 0 20px rgba(0,212,200,0.6)); }
       50% { transform: scale(1.05); filter: drop-shadow(0 0 35px rgba(0,212,200,0.9)); }
