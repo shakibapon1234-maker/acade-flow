@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How Offline-First Software Solves the Internet Reliability Problem | AcadeFlow</title>
+  <meta name="description" content="Internet outages shouldn't stop attendance or fee collection. Here's why offline-first architecture matters for academies in Bangladesh." />
+  <meta name="keywords" content="offline school management system, offline academy software bangladesh, offline-first ERP, academy software without internet" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://acade-flow.vercel.app/blog/offline-school-management-system" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#050d1a" />
+  <meta property="og:title" content="How Offline-First Software Solves the Internet Reliability Problem" />
+  <meta property="og:description" content="Internet outages shouldn't stop attendance or fee collection. Here's why offline-first architecture matters for academies in Bangladesh." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://acade-flow.vercel.app/blog/offline-school-management-system" />
+  <meta property="og:locale" content="en_BD" />
+  <meta property="og:image" content="https://acade-flow.vercel.app/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="AcadeFlow" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How Offline-First Software Solves the Internet Reliability Problem" />
+  <meta name="twitter:description" content="Internet outages shouldn't stop attendance or fee collection. Here's why offline-first architecture matters for academies in Bangladesh." />
+  <meta name="twitter:image" content="https://acade-flow.vercel.app/og-image.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How Offline-First Software Solves the Internet Reliability Problem",
+    "description": "Internet outages shouldn't stop attendance or fee collection. Here's why offline-first architecture matters for academies in Bangladesh.",
+    "image": "https://acade-flow.vercel.app/og-image.png",
+    "datePublished": "2026-06-19",
+    "dateModified": "2026-06-19",
+    "author": { "@type": "Organization", "name": "AcadeFlow" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "AcadeFlow",
+      "logo": { "@type": "ImageObject", "url": "https://acade-flow.vercel.app/acadeflow_logo.png" }
+    },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://acade-flow.vercel.app/blog/offline-school-management-system" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://acade-flow.vercel.app/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://acade-flow.vercel.app/#blog" },
+      { "@type": "ListItem", "position": 3, "name": "How Offline-First Software Solves the Internet Reliability Problem", "item": "https://acade-flow.vercel.app/blog/offline-school-management-system" }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Hind+Siliguri:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Hind+Siliguri:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Hind+Siliguri:wght@400;500;600;700&display=swap" />
+  </noscript>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<!-- COLOR BAR -->
+<div class="color-bar"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="logo">
+      <img src="/logo_horizontal.png" alt="AcadeFlow" width="152" height="38" />
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/#android-app" class="only-en">Android App</a><a href="/#android-app" class="only-bn bn">অ্যান্ড্রয়েড</a></li>
+      <li><a href="/#features" class="only-en">Features</a><a href="/#features" class="only-bn bn">ফিচার</a></li>
+      <li><a href="/#how-it-works" class="only-en">How It Works</a><a href="/#how-it-works" class="only-bn bn">কীভাবে কাজ করে</a></li>
+      <li><a href="/#pricing" class="only-en">Pricing</a><a href="/#pricing" class="only-bn bn">মূল্য</a></li>
+      <li><a href="/#blog" class="only-en">Blog</a><a href="/#blog" class="only-bn bn">ব্লগ</a></li>
+      <li><a href="/#faq" class="only-en">FAQ</a><a href="/#faq" class="only-bn bn">প্রশ্নোত্তর</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" onclick="setLang('bn')">বাং</button>
+      </div>
+      <a href="/#pricing" class="nav-cta only-en">Free Trial →</a>
+      <a href="/#pricing" class="nav-cta only-bn bn">ফ্রি ট্রায়াল →</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/" class="only-en">Home</a><a href="/" class="only-bn bn">হোম</a>
+    <span class="sep">/</span>
+    <a href="/#blog" class="only-en">Blog</a><a href="/#blog" class="only-bn bn">ব্লগ</a>
+    <span class="sep">/</span>
+    <span class="current only-en">How Offline-First Software Solves the Internet Reliability Problem</span>
+    <span class="current only-bn bn">অফলাইন-ফার্স্ট সফটওয়্যার কীভাবে ইন্টারনেট সমস্যার সমাধান করে</span>
+  </nav>
+</div>
+<section class="article-hero">
+  <div class="container">
+    <div class="article-tag only-en">Technology</div>
+    <div class="article-tag only-bn bn">প্রযুক্তি</div>
+    <h1 class="article-title">How Offline-First Software Solves the Internet Reliability Problem</h1>
+    <div class="article-meta">
+      <span>📅 June 19, 2026</span>
+      <span class="only-en">⏱ 6 min read</span>
+      <span class="only-bn bn">⏱ 6 মিনিটে পড়ুন</span>
+      <span>🎓 AcadeFlow Team</span>
+    </div>
+  </div>
+</section>
+<section><div class="container"><div class="article-body">
+
+<p class="only-en">Ask any coaching center owner outside Dhaka or Chattogram about their biggest software complaint, and &quot;internet&quot; comes up almost every time &mdash; not slow internet, but internet that simply isn't there for stretches of the day. Load-shedding takes down a router. A storm cuts a fiber line for two days. A staff member is at a satellite branch with patchy mobile data. Software built on the assumption of constant connectivity treats every one of these moments as a crisis. Offline-first software treats them as a normal Tuesday.</p>
+<p class="only-bn bn">ঢাকা বা চট্টগ্রামের বাইরে যেকোনো কোচিং সেন্টার owner-কে তাদের সবচেয়ে বড় software-সংক্রান্ত অভিযোগ জিজ্ঞেস করুন &mdash; প্রায় প্রতিবারই উত্তর আসবে &quot;internet&quot; &mdash; slow internet না, বরং দিনের একটা সময়ে internet থাকেই না। Load-shedding-এ router বন্ধ হয়ে যায়। ঝড়ে fiber line দুই দিন কাটা থাকে। কোনো staff satellite branch-এ আছেন যেখানে mobile data অনিয়মিত। যে software constant connectivity ধরে নিয়ে তৈরি, এর প্রতিটা মুহূর্তকে সেটা crisis হিসেবে treat করে। Offline-first software এগুলোকে শুধু একটা সাধারণ মঙ্গলবার হিসেবে নেয়।</p>
+
+<h2 class="only-en">What &quot;Offline-First&quot; Actually Means</h2>
+<h2 class="only-bn bn">&quot;Offline-First&quot; আসলে কী মানে</h2>
+<p class="only-en">Offline-first isn't the same as &quot;has an offline mode&quot; tacked onto an otherwise online product. It means the core application &mdash; attendance, fee entry, exam records &mdash; is designed to run entirely on the device first, storing data locally, and treats syncing to the cloud as a background task that happens whenever a connection becomes available. The distinction matters: a true offline-first app never blocks you from working just because the internet is down.</p>
+<p class="only-bn bn">Offline-first মানে অন্য একটা online product-এর সাথে জোড়াতালি দিয়ে বসানো &quot;offline mode&quot; না। এর মানে হলো core application &mdash; attendance, fee entry, exam record &mdash; মূলত device-এর উপরেই সম্পূর্ণভাবে চলার জন্য design করা, data local-এ store হয়, আর cloud-এ sync করাটা একটা background task যেটা connection পাওয়া মাত্র হয়। পার্থক্যটা গুরুত্বপূর্ণ &mdash; একটা সত্যিকারের offline-first app internet বন্ধ থাকার কারণে আপনাকে কখনো কাজ করা থেকে আটকায় না।</p>
+
+<h2 class="only-en">The Cost of Online-Only Software</h2>
+<h2 class="only-bn bn">Online-Only Software-এর আসল খরচ</h2>
+<ul class="only-en">
+  <li>Attendance can't be taken during an outage, creating gaps that get &quot;fixed&quot; later from memory &mdash; and memory is wrong more often than people admit.</li>
+  <li>Fee collection stalls &mdash; a parent paying cash at the counter still needs an instant, accurate receipt regardless of connectivity.</li>
+  <li>Staff lose trust in the system after the second or third time it locks them out mid-task, and quietly drift back to a paper backup &quot;just in case&quot; &mdash; which defeats the entire purpose of the software.</li>
+</ul>
+<ul class="only-bn bn">
+  <li>Outage-এর সময় attendance নেওয়া যায় না, পরে স্মৃতি থেকে &quot;ঠিক&quot; করতে হয় &mdash; আর মানুষ যা স্বীকার করে তার চেয়ে স্মৃতি অনেক বেশি ভুল হয়।</li>
+  <li>Fee collection আটকে যায় &mdash; counter-এ নগদ টাকা দেওয়া অভিভাবকের তখনই একটা সঠিক receipt দরকার, connectivity যাই থাকুক না কেন।</li>
+  <li>দুই-তিনবার কাজের মাঝখানে lock হয়ে গেলে staff-রা system-এর উপর আস্থা হারান, আর চুপচাপ আবার paper backup-এ ফিরে যান &quot;just in case&quot; &mdash; যেটা software ব্যবহারের পুরো উদ্দেশ্যটাই নষ্ট করে দেয়।</li>
+</ul>
+
+<h2 class="only-en">How Offline-First Architecture Works (Simplified)</h2>
+<h2 class="only-bn bn">Offline-First Architecture কীভাবে কাজ করে (সহজ ভাষায়)</h2>
+<p class="only-en">Modern offline-first apps (AcadeFlow included) typically use a local database on the device itself &mdash; technologies like IndexedDB in a browser, or local storage in a mobile app &mdash; as the primary source of truth during day-to-day use. Every action (marking attendance, recording a payment) is saved instantly to this local store. A background sync process then pushes changes to the cloud and pulls down updates from other devices whenever a connection is detected, resolving any conflicts automatically.</p>
+<p class="only-bn bn">আধুনিক offline-first app (AcadeFlow সহ) সাধারণত device-এর নিজের local database ব্যবহার করে &mdash; যেমন browser-এ IndexedDB, বা mobile app-এ local storage &mdash; দৈনন্দিন ব্যবহারে primary source হিসেবে। প্রতিটা action (attendance mark করা, payment record করা) সাথে সাথে এই local store-এ save হয়। এরপর একটা background sync process connection পাওয়া মাত্র cloud-এ change push করে আর অন্য device থেকে update pull করে, কোনো conflict হলে সেটা automatically resolve করে।</p>
+
+<table class="compare-table only-en">
+  <tr><th></th><th>Online-Only Software</th><th>Offline Mode (Bolted On)</th><th>True Offline-First</th></tr>
+  <tr><td>Works with zero internet</td><td>No</td><td>Partially</td><td>Fully</td></tr>
+  <tr><td>Data entry speed</td><td>Network-dependent</td><td>Network-dependent</td><td>Instant (local)</td></tr>
+  <tr><td>Auto-sync when reconnected</td><td>N/A</td><td>Sometimes manual</td><td>Automatic</td></tr>
+  <tr><td>Risk of data conflicts</td><td>Low (single source)</td><td>Medium</td><td>Low (handled automatically)</td></tr>
+  <tr><td>Built for Bangladesh's connectivity</td><td>No</td><td>Partially</td><td>Yes</td></tr>
+</table>
+<table class="compare-table only-bn bn">
+  <tr><th></th><th>শুধু Online Software</th><th>Offline Mode (জোড়াতালি)</th><th>সত্যিকারের Offline-First</th></tr>
+  <tr><td>Zero internet-এ কাজ করে</td><td>না</td><td>আংশিক</td><td>সম্পূর্ণভাবে</td></tr>
+  <tr><td>Data entry-র গতি</td><td>Network-নির্ভর</td><td>Network-নির্ভর</td><td>তাৎক্ষণিক (local)</td></tr>
+  <tr><td>Reconnect হলে auto-sync</td><td>N/A</td><td>কখনো manual</td><td>Automatic</td></tr>
+  <tr><td>Data conflict-এর ঝুঁকি</td><td>কম (single source)</td><td>মাঝারি</td><td>কম (automatic handle)</td></tr>
+  <tr><td>বাংলাদেশের connectivity-র জন্য তৈরি</td><td>না</td><td>আংশিক</td><td>হ্যাঁ</td></tr>
+</table>
+
+<div class="callout">
+  <div class="callout-title only-en">💡 A Quick Test for Any Software Vendor</div>
+  <div class="callout-title only-bn bn">💡 যেকোনো Software Vendor-কে দ্রুত একটা Test</div>
+  <p class="only-en">Before subscribing to any academy software, turn off your phone's WiFi and mobile data, then ask the vendor to demo taking attendance and recording a fee payment in that state. If they can't, or if the demo requires reconnecting first, the product isn't truly offline-first &mdash; regardless of what the product page says.</p>
+  <p class="only-bn bn">কোনো academy software subscribe করার আগে, ফোনের WiFi আর mobile data বন্ধ করে দিন, তারপর vendor-কে বলুন সেই অবস্থায় attendance নেওয়া আর fee payment record করার demo দিতে। যদি তারা না পারে, বা demo-র জন্য আগে reconnect করতে হয়, তাহলে product page-এ যাই লেখা থাকুক, এটা সত্যিকারের offline-first না।</p>
+</div>
+
+<h2 class="only-en">It's Not Just About Outages</h2>
+<h2 class="only-bn bn">এটা শুধু Outage-এর ব্যাপার না</h2>
+<p class="only-en">Offline-first design also solves a quieter, everyday problem: speed. Even with a strong connection, an app that has to round-trip to a server for every tap feels sluggish. Local-first apps feel instant because most actions don't wait on a network request at all &mdash; the sync happens invisibly afterward.</p>
+<p class="only-bn bn">Offline-first design একটা আরো চুপচাপ, প্রতিদিনের সমস্যাও সমাধান করে &mdash; গতি। ভালো connection থাকলেও, প্রতিটা tap-এ server-এ round-trip করতে হলে app ধীর মনে হয়। Local-first app তাৎক্ষণিক মনে হয় কারণ বেশিরভাগ action network request-এর জন্য অপেক্ষাই করে না &mdash; sync পরে অদৃশ্যভাবে হয়ে যায়।</p>
+
+<h2 class="only-en">How AcadeFlow Is Built for This</h2>
+<h2 class="only-bn bn">AcadeFlow এর জন্য কীভাবে তৈরি</h2>
+<p class="only-en">AcadeFlow runs as a Progressive Web App with IndexedDB as its local data layer, meaning attendance, fees, exams, and student records are fully usable with zero internet connection. The moment a connection returns, everything syncs to the cloud automatically &mdash; no manual &quot;sync now&quot; button to remember, no risk of lost work during the outage.</p>
+<p class="only-bn bn">AcadeFlow একটা Progressive Web App হিসেবে চলে, local data layer হিসেবে IndexedDB ব্যবহার করে &mdash; মানে attendance, fee, exam, আর student record zero internet connection-এও পুরোপুরি ব্যবহারযোগ্য। Connection ফিরে আসা মাত্র সব কিছু automatically cloud-এ sync হয়ে যায় &mdash; মনে রাখার মতো কোনো manual &quot;sync now&quot; button নেই, outage-এর সময় কাজ হারানোর ঝুঁকি নেই।</p>
+
+<a href="/#features" class="article-cta-inline only-en">Try AcadeFlow's Offline Mode →</a>
+<a href="/#features" class="article-cta-inline only-bn bn">AcadeFlow-র Offline Mode দেখুন →</a>
+
+<p class="only-en">Reliable internet is still a privilege, not a guarantee, for a large share of academies outside Bangladesh's biggest cities. Software that assumes otherwise isn't a small inconvenience &mdash; it's a daily operational risk. Before signing up for anything, ask the offline question first.</p>
+<p class="only-bn bn">বাংলাদেশের বড় শহরগুলোর বাইরে অনেক academy-র জন্য নির্ভরযোগ্য internet এখনো একটা সুবিধা, নিশ্চয়তা না। যে software অন্যথা ধরে নিয়ে তৈরি, সেটা ছোটখাটো অসুবিধা না &mdash; এটা প্রতিদিনের একটা operational ঝুঁকি। কোনোকিছুতে sign up করার আগে, প্রথমে offline প্রশ্নটাই জিজ্ঞেস করুন।</p>
+
+<div class="author-box">
+  <div class="av">AF</div>
+  <div>
+    <div class="au-name">AcadeFlow Team</div>
+    <div class="au-role only-en">Builders of Wings Fly Academy's management system</div>
+    <div class="au-role only-bn bn">Wings Fly Academy-র management system নির্মাতা</div>
+  </div>
+</div>
+
+</div></div></section>
+<section class="related-wrap"><div class="container"><div class="s-head reveal"><span class="s-eye only-en">Keep Reading</span><span class="s-eye only-bn bn">আরো পড়ুন</span></div><div class="bl-grid">
+      <a href="/blog/coaching-center-management-software-bangladesh" class="bl-c reveal">
+        <div class="bl-tag only-en">Management</div>
+        <div class="bl-tag only-bn bn">ম্যানেজমেন্ট</div>
+        <div class="bl-title only-en">Best Academy Management Software for Training Institutes in Bangladesh</div>
+        <div class="bl-title only-bn bn">বাংলাদেশের সেরা কোচিং সেন্টার ম্যানেজমেন্ট সফটওয়্যার — সম্পূর্ণ গাইড</div>
+        <p class="bl-ex only-en">A complete comparison of top academy ERP systems — features, pricing, and which one fits your institution.</p>
+        <p class="bl-ex only-bn bn">সেরা academy ERP সিস্টেমের তুলনামূলক বিশ্লেষণ — ফিচার, মূল্য এবং আপনার প্রতিষ্ঠানের জন্য সেরাটি।</p>
+      </a>
+      <a href="/blog/digital-certificate-academy-bangladesh" class="bl-c reveal">
+        <div class="bl-tag only-en">Certificates</div>
+        <div class="bl-tag only-bn bn">সার্টিফিকেট</div>
+        <div class="bl-title only-en">Why QR-Verified Digital Certificates Are Replacing Paper</div>
+        <div class="bl-title only-bn bn">কেন QR-যাচাইযোগ্য ডিজিটাল সার্টিফিকেট কাগজকে প্রতিস্থাপন করছে</div>
+        <p class="bl-ex only-en">Digital certificates are more secure, cost less, and verifiable instantly from anywhere in the world.</p>
+        <p class="bl-ex only-bn bn">ডিজিটাল সার্টিফিকেট আরো নিরাপদ, সাশ্রয়ী এবং বিশ্বের যেকোনো স্থান থেকে তাৎক্ষণিকভাবে যাচাইযোগ্য।</p>
+      </a>
+</div></div>
+</section>
+<!-- CTA -->
+<section class="cta-s" id="contact">
+  <div class="cta-glow"></div>
+  <div class="container">
+    <h2 class="cta-t reveal only-en">Start Your Free Trial Today</h2>
+    <h2 class="cta-t reveal only-bn bn">আজই শুরু করুন — ৩ মাস বিনামূল্যে</h2>
+    <p class="cta-sub reveal only-en">3 months free. Full access. No credit card. We set it up for you.</p>
+    <p class="cta-sub reveal only-bn bn">কোনো credit card লাগবে না। Setup করে দেব আমরাই।</p>
+    <div class="cta-btns">
+      <a href="https://wa.me/8801757208244?text=I'd like to start an AcadeFlow free trial" class="btn-p reveal only-en" target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
+      <a href="https://wa.me/8801757208244?text=AcadeFlow free trial শুরু করতে চাই" class="btn-p reveal only-bn bn" target="_blank" rel="noopener">💬 WhatsApp-এ যোগাযোগ করুন</a>
+      <a href="mailto:shakibapon1234@gmail.com" class="btn-s reveal only-en">✉ Send an Email</a>
+      <a href="mailto:shakibapon1234@gmail.com" class="btn-s reveal only-bn bn">✉ ইমেইল করুন</a>
+    </div>
+  </div>
+</section>
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="ft-grid">
+      <div>
+        <a href="/" class="logo"><img src="/logo_horizontal.png" alt="AcadeFlow" width="144" height="36" style="height:36px;"></a>
+        <p class="ft-tagline only-en" style="margin-top:12px;">The complete management system for training institutes. Built for academies that want to grow.</p>
+        <p class="ft-tagline only-bn bn" style="margin-top:12px;">বাংলাদেশের সেরা একাডেমি ম্যানেজমেন্ট সিস্টেম।<br/>যেসব একাডেমি বাড়তে চায় তাদের জন্য তৈরি।</p>
+      </div>
+      <div class="ft-col">
+        <h4 class="only-en">Product</h4>
+        <h4 class="only-bn bn">পণ্য</h4>
+        <ul>
+          <li><a href="/#android-app"><span class="only-en">Android App</span><span class="only-bn bn">Android অ্যাপ</span></a></li>
+          <li><a href="/#features"><span class="only-en">Features</span><span class="only-bn bn">ফিচারসমূহ</span></a></li>
+          <li><a href="/#pricing"><span class="only-en">Pricing</span><span class="only-bn bn">মূল্য তালিকা</span></a></li>
+          <li><a href="/#how-it-works"><span class="only-en">How It Works</span><span class="only-bn bn">কীভাবে কাজ করে</span></a></li>
+          <li><a href="/#faq"><span class="only-en">FAQ</span><span class="only-bn bn">প্রশ্নোত্তর</span></a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h4 class="only-en">Contact</h4>
+        <h4 class="only-bn bn">যোগাযোগ</h4>
+        <ul>
+          <li><a href="https://wa.me/8801757208244" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="mailto:shakibapon1234@gmail.com">Email</a></li>
+          <li><a href="https://wingsflyaviationacademy.com" target="_blank" rel="noopener">Wings Fly Academy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <span>© 2026 AcadeFlow. <span class="only-en">All rights reserved.</span><span class="only-bn bn">সর্বস্বত্ব সংরক্ষিত।</span></span>
+      <span style="font-size:0.8rem;"><span class="only-en">Made in Bangladesh</span><span class="only-bn bn">বাংলাদেশে তৈরি</span> 🇧🇩</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a class="wa" href="https://wa.me/8801757208244" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<script>
+  // LANGUAGE TOGGLE
+  function setLang(lang) {
+    document.documentElement.setAttribute('data-lang', lang);
+    document.documentElement.setAttribute('lang', lang === 'bn' ? 'bn' : 'en');
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    document.querySelector('.lang-btn[onclick="setLang(\'' + lang + '\')"]').classList.add('active');
+    localStorage.setItem('af-lang', lang);
+  }
+  const savedLang = localStorage.getItem('af-lang');
+  if (savedLang) setLang(savedLang);
+  else document.documentElement.setAttribute('data-lang', 'en');
+
+  // MOBILE NAV TOGGLE
+  const navToggle = document.getElementById('navToggle');
+  const navLinksEl = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    const isOpen = navLinksEl.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  navLinksEl.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinksEl.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 800) {
+      navLinksEl.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // SCROLL REVEAL
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) setTimeout(() => e.target.classList.add('visible'), i * 55);
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+  // NAV scroll
+  window.addEventListener('scroll', () => {
+    document.querySelector('nav').style.background = window.scrollY > 80 ? 'rgba(5,13,26,0.98)' : 'rgba(5,13,26,0.92)';
+  });
+</script>
+</body>
+</html>
