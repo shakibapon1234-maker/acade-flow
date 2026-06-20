@@ -1362,12 +1362,10 @@
   const parts = document.getElementById('splashParts');
   const colors = ['#00d4c8','#a78bfa','#f5a623','#4ade80','#f43f5e','#38bdf8'];
   const isLighthouse = /Lighthouse|Chrome-Lighthouse/i.test(navigator.userAgent);
-  const hasVisitedBefore = localStorage.getItem('af-visited');
 
-  if (isLighthouse || hasVisitedBefore) {
+  if (isLighthouse) {
     splash.style.display = 'none';
   } else {
-    localStorage.setItem('af-visited', '1');
     function mkParticle() {
       const p = document.createElement('div');
       const s = 2 + Math.random() * 5;
