@@ -1,0 +1,17 @@
+# AcadeFlow
+
+> AcadeFlow is an academy management ERP for coaching centers and training institutes in Bangladesh, with a native Android app, offline-first architecture, AI-powered exams, Face ID security, and QR-verified digital certificates.
+
+AcadeFlow helps coaching centers, language academies, and training institutes manage attendance, exams, fees, payroll, and certificates — fully usable without an internet connection, with a dedicated Android app for owners and teachers who manage their academy from a phone. The first three months are free with no credit card required.
+
+## Pages
+
+- [Homepage](https://acade-flow.vercel.app/): Features, pricing, FAQ, and free trial signup
+- [Best Academy Management Software for Training Institutes in Bangladesh](https://acade-flow.vercel.app/blog/coaching-center-management-software-bangladesh): Comparison guide for choosing academy ERP software in Bangladesh
+- [Why QR-Verified Digital Certificates Are Replacing Paper](https://acade-flow.vercel.app/blog/digital-certificate-academy-bangladesh): How QR-verified digital certificates work and why they matter
+- [How Offline-First Software Solves the Internet Reliability Problem](https://acade-flow.vercel.app/blog/offline-school-management-system): Offline-first architecture explained for academies with unreliable internet
+
+## Contact
+
+- WhatsApp: https://wa.me/8801757208244
+- Email: shakibapon1234@gmail.com

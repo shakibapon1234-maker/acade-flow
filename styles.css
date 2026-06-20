@@ -1,3 +1,18 @@
+/* ============================================================
+   AcadeFlow — SOURCE CSS FILE
+   This file is NOT linked directly from any HTML page.
+   It is inlined into <style> tags in Index.html and every
+   blog/*/index.html page at build time, to avoid an extra
+   render-blocking network request (which was costing real
+   PageSpeed points).
+
+   HOW TO EDIT:
+   1. Make your changes in this file.
+   2. Run: python3 inline-css.py
+      (re-inlines this file into all 4 HTML pages automatically)
+   3. Deploy.
+   ============================================================ */
+
     :root {
       --navy:#050d1a; --navy2:#0a1628; --navy3:#0f2040;
       --teal:#00d4c8; --teal2:#00a89e; --amber:#f5a623;
@@ -412,7 +427,7 @@
     .reveal{opacity:0;transform:translateY(28px);transition:opacity 0.6s ease,transform 0.6s ease;}
     .reveal.visible{opacity:1;transform:none;}
 
-    /* ===== BLOG ARTICLE STYLES ===== */
+/* ===== BLOG ARTICLE STYLES ===== */
     .breadcrumb{padding:110px 0 0;font-size:0.85rem;color:var(--muted);}
     .breadcrumb a{color:var(--muted);text-decoration:none;}
     .breadcrumb a:hover{color:var(--teal);}
