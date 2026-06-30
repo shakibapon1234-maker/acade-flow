@@ -488,6 +488,30 @@
       content: '⚠️ ';
     }
 
+    /* FEATURE COMPARISON (vs Local & Global Software) */
+    .fcomp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid rgba(0,212,200,0.15);border-radius:16px;overflow:hidden;background:#0a1628;box-shadow:0 10px 40px rgba(0,0,0,0.3);}
+    .fcomp-col{padding:30px 26px;border-left:1px solid rgba(0,212,200,0.08);}
+    .fcomp-col:first-child{border-left:none;}
+    .fcomp-col.fcomp-us{background:linear-gradient(180deg,rgba(0,212,200,0.08),rgba(167,139,250,0.04));position:relative;}
+    .fcomp-col.fcomp-us::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#00d4c8,#a78bfa);}
+    .fcomp-head{text-align:center;padding-bottom:22px;margin-bottom:6px;border-bottom:1px solid rgba(0,212,200,0.1);}
+    .fcomp-head-tag{font-size:0.7rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#7a8baa;}
+    .fcomp-us .fcomp-head-tag{color:#00d4c8;}
+    .fcomp-head-name{font-size:1.1rem;font-weight:800;color:#f0f4ff;margin-top:4px;}
+    .fcomp-row{display:flex;align-items:flex-start;gap:10px;padding:13px 2px;font-size:0.86rem;color:#7a8baa;line-height:1.5;border-bottom:1px dashed rgba(122,139,170,0.12);}
+    .fcomp-row:last-child{border-bottom:none;}
+    .fcomp-badge{flex-shrink:0;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:800;margin-top:1px;}
+    .fcomp-yes{background:rgba(74,222,128,0.15);color:#4ade80;}
+    .fcomp-partial{background:rgba(245,166,35,0.15);color:#f5a623;}
+    .fcomp-no{background:rgba(244,63,94,0.15);color:#f43f5e;}
+    .fcomp-us .fcomp-row{color:#dce4f5;}
+    .fcomp-foot{grid-column:1/-1;text-align:center;padding:20px 24px;background:rgba(0,212,200,0.04);border-top:1px solid rgba(0,212,200,0.1);font-size:0.85rem;color:#7a8baa;}
+    @media(max-width:860px){
+      .fcomp-grid{grid-template-columns:1fr;}
+      .fcomp-col{border-left:none;border-top:1px solid rgba(0,212,200,0.08);}
+      .fcomp-col:first-child{border-top:none;}
+    }
+
     @media(max-width: 960px) {
       .sub-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -1276,6 +1300,69 @@
           </tr>
         </tbody>
       </table>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURE COMPARISON -->
+<section id="feature-comparison" class="sub-section">
+  <div class="container">
+    <div class="s-head reveal">
+      <span class="s-eye only-en">How We Stack Up</span>
+      <span class="s-eye only-bn bn">প্রতিযোগী বিশ্লেষণ</span>
+      <h2 class="s-title only-en">Built Different from Local & Global Tools</h2>
+      <h2 class="s-title only-bn bn">দেশি ও আন্তর্জাতিক সফটওয়্যার থেকে কতটা আলাদা?</h2>
+      <p class="s-sub only-en">A side-by-side look at the capabilities that actually matter for running an academy in Bangladesh.</p>
+      <p class="s-sub only-bn bn">বাংলাদেশের একাডেমি পরিচালনায় সত্যিকারের যে সুবিধাগুলো প্রয়োজন, তার একটি পাশাপাশি তুলনা।</p>
+    </div>
+
+    <div class="fcomp-grid reveal">
+      <div class="fcomp-col fcomp-us">
+        <div class="fcomp-head">
+          <div class="fcomp-head-tag only-en">This Platform</div>
+          <div class="fcomp-head-tag only-bn bn">আমাদের প্ল্যাটফর্ম</div>
+          <div class="fcomp-head-name">AcadeFlow</div>
+        </div>
+        <div class="fcomp-row"><span class="fcomp-badge fcomp-yes">✓</span><span class="only-en">Works fully offline, syncs when back online</span><span class="only-bn bn">ইন্টারনেট ছাড়াও সম্পূর্ণ কাজ করে, পরে সিঙ্ক হয়</span></div>
+        <div class="fcomp-row"><span class="fcomp-badge fcomp-yes">✓</span><span class="only-en">Switch between Coaching & School/College mode</span><span class="only-bn bn">কোচিং ও স্কুল/কলেজ মোড একসাথে সুইচ করা যায়</span></div>
+        <div class="fcomp-row"><span class="fcomp-badge fcomp-yes">✓</span><span class="only-en">ID cards, certificates & result sheets built-in</span><span class="only-bn bn">আইডি কার্ড, সার্টিফিকেট ও রেজাল্ট শিট বিল্ট-ইন</span></div>
+        <div class="fcomp-row"><span class="fcomp-badge fcomp-yes">✓</span><span class="only-en">Full activity log & one-click recycle bin</span><span class="only-bn bn">সম্পূর্ণ অ্যাক্টিভিটি লগ ও রিসাইকেল বিন</span></div>
+        <div class="fcomp-row"><span class="fcomp-badge fcomp-yes">✓</span><span class="only-en">Bangla + English, BDT & local SMS gateway</span><span class="only-bn bn">বাংলা + ইংরেজি, টাকা ও লোকাল এসএমএস গেটওয়ে</span></div>
+        <div class="fcomp-row"><span class="fcomp-badge fcomp-partial">~</span><span class="only-en">Tutor-marketplace & video classroom (planned)</span><span class="only-bn bn">টিউটর মার্কেটপ্লেস ও ভিডিও ক্লাসরুম (শীঘ্রই)</span></div>
+      </div>
+
+      <div class="fcomp-col">
+        <div class="fcomp-head">
+          <div class="fcomp-head-tag only-en">Bangladesh Local Software</div>
+          <div class="fcomp-head-tag only-bn bn">দেশীয় কোচিং সফটওয়্যার</div>
+          <div class="fcomp-head-name only-en">Typical Vendor</div>
+          <div class="fcomp-head-name only-bn bn">প্রচলিত ভেন্ডর</div>
+        </div>
+        <div class="fcomp-row"><span class="fcomp-badge fcomp-no">✕</span><span class="only-en">Cloud-only — stops working without internet</span><span class="only-bn bn">শুধু ক্লাউড-নির্ভর — ইন্টারনেট ছাড়া কাজ করে না</span></div>
+        <div class="fcomp-row"><span class="fcomp-badge fcomp-no">✕</span><span class="only-en">Separate products for coaching vs school</span><span class="only-bn bn">কোচিং ও স্কুলের জন্য আলাদা আলাদা সফটওয়্যার</span></div>
+        <div class="fcomp-row"><span class="fcomp-badge fcomp-partial">~</span><span class="only-en">ID/certificate often a paid add-on</span><span class="only-bn bn">আইডি/সার্টিফিকেট প্রায়ই বাড়তি খরচে</span></div>
+        <div class="fcomp-row"><span class="fcomp-badge fcomp-no">✕</span><span class="only-en">No undo — deleted records are gone for good</span><span class="only-bn bn">ভুল ডিলিট হলে আর ফিরে পাওয়ার উপায় নেই</span></div>
+        <div class="fcomp-row"><span class="fcomp-badge fcomp-yes">✓</span><span class="only-en">Bangla support, but rarely cloud + offline both</span><span class="only-bn bn">বাংলা সাপোর্ট থাকে, তবে অফলাইন প্রায় থাকে না</span></div>
+        <div class="fcomp-row"><span class="fcomp-badge fcomp-no">✕</span><span class="only-en">No marketplace or virtual classroom tools</span><span class="only-bn bn">মার্কেটপ্লেস বা ভার্চুয়াল ক্লাসরুম নেই</span></div>
+      </div>
+
+      <div class="fcomp-col">
+        <div class="fcomp-head">
+          <div class="fcomp-head-tag only-en">Global Tutoring Software</div>
+          <div class="fcomp-head-tag only-bn bn">আন্তর্জাতিক টিউটরিং সফটওয়্যার</div>
+          <div class="fcomp-head-name only-en">e.g. International SaaS</div>
+          <div class="fcomp-head-name only-bn bn">যেমন: আন্তর্জাতিক স্যাস</div>
+        </div>
+        <div class="fcomp-row"><span class="fcomp-badge fcomp-no">✕</span><span class="only-en">Cloud-only — no offline fallback</span><span class="only-bn bn">শুধু ক্লাউড — অফলাইন সাপোর্ট নেই</span></div>
+        <div class="fcomp-row"><span class="fcomp-badge fcomp-no">✕</span><span class="only-en">Built for 1-to-1 tutoring, not coaching/school ops</span><span class="only-bn bn">এক-এক টিউটরিং-এর জন্য তৈরি, কোচিং/স্কুলের জন্য নয়</span></div>
+        <div class="fcomp-row"><span class="fcomp-badge fcomp-no">✕</span><span class="only-en">No ID card, certificate, or result sheet tools</span><span class="only-bn bn">আইডি কার্ড, সার্টিফিকেট বা রেজাল্ট শিট নেই</span></div>
+        <div class="fcomp-row"><span class="fcomp-badge fcomp-partial">~</span><span class="only-en">Audit logs exist, but no recycle/undo</span><span class="only-bn bn">লগ থাকে, কিন্তু রিসাইকেল/আনডু থাকে না</span></div>
+        <div class="fcomp-row"><span class="fcomp-badge fcomp-no">✕</span><span class="only-en">No Bangla UI, BDT, or local SMS support</span><span class="only-bn bn">বাংলা UI, টাকা বা লোকাল এসএমএস নেই</span></div>
+        <div class="fcomp-row"><span class="fcomp-badge fcomp-yes">✓</span><span class="only-en">Strong tutor-matching & built-in video classroom</span><span class="only-bn bn">শক্তিশালী টিউটর-ম্যাচিং ও ভিডিও ক্লাসরুম</span></div>
+      </div>
+
+      <div class="fcomp-foot only-en">Pricing also differs: AcadeFlow uses a flat monthly plan that doesn't climb as your student count grows — most global tools charge per student or per lesson.</div>
+      <div class="fcomp-foot only-bn bn">মূল্য কাঠামোও আলাদা: শিক্ষার্থী বাড়লেও AcadeFlow-এর মাসিক চার্জ একই থাকে — বেশিরভাগ আন্তর্জাতিক টুল প্রতি শিক্ষার্থী বা প্রতি ক্লাস হিসেবে চার্জ করে।</div>
     </div>
   </div>
 </section>

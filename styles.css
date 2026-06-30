@@ -337,6 +337,30 @@
       content: '⚠️ ';
     }
 
+    /* FEATURE COMPARISON (vs Local & Global Software) */
+    .fcomp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid rgba(0,212,200,0.15);border-radius:16px;overflow:hidden;background:#0a1628;box-shadow:0 10px 40px rgba(0,0,0,0.3);}
+    .fcomp-col{padding:30px 26px;border-left:1px solid rgba(0,212,200,0.08);}
+    .fcomp-col:first-child{border-left:none;}
+    .fcomp-col.fcomp-us{background:linear-gradient(180deg,rgba(0,212,200,0.08),rgba(167,139,250,0.04));position:relative;}
+    .fcomp-col.fcomp-us::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#00d4c8,#a78bfa);}
+    .fcomp-head{text-align:center;padding-bottom:22px;margin-bottom:6px;border-bottom:1px solid rgba(0,212,200,0.1);}
+    .fcomp-head-tag{font-size:0.7rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#7a8baa;}
+    .fcomp-us .fcomp-head-tag{color:#00d4c8;}
+    .fcomp-head-name{font-size:1.1rem;font-weight:800;color:#f0f4ff;margin-top:4px;}
+    .fcomp-row{display:flex;align-items:flex-start;gap:10px;padding:13px 2px;font-size:0.86rem;color:#7a8baa;line-height:1.5;border-bottom:1px dashed rgba(122,139,170,0.12);}
+    .fcomp-row:last-child{border-bottom:none;}
+    .fcomp-badge{flex-shrink:0;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:800;margin-top:1px;}
+    .fcomp-yes{background:rgba(74,222,128,0.15);color:#4ade80;}
+    .fcomp-partial{background:rgba(245,166,35,0.15);color:#f5a623;}
+    .fcomp-no{background:rgba(244,63,94,0.15);color:#f43f5e;}
+    .fcomp-us .fcomp-row{color:#dce4f5;}
+    .fcomp-foot{grid-column:1/-1;text-align:center;padding:20px 24px;background:rgba(0,212,200,0.04);border-top:1px solid rgba(0,212,200,0.1);font-size:0.85rem;color:#7a8baa;}
+    @media(max-width:860px){
+      .fcomp-grid{grid-template-columns:1fr;}
+      .fcomp-col{border-left:none;border-top:1px solid rgba(0,212,200,0.08);}
+      .fcomp-col:first-child{border-top:none;}
+    }
+
     @media(max-width: 960px) {
       .sub-grid {
         grid-template-columns: repeat(2, 1fr);
